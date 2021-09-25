@@ -1,4 +1,4 @@
-﻿<Window
+<Window
     x:Class="ValorantRPC.MainWindow"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
@@ -8,7 +8,6 @@
     Title="MainWindow"
     Width="800"
     Height="450"
-    Loaded="MainScript"
     ShowInTaskbar="False"
     WindowState="Minimized"
     mc:Ignorable="d">
@@ -19,7 +18,7 @@
             ToolTipText="ValorantStatus">
             <tb:TaskbarIcon.ContextMenu>
                 <ContextMenu>
-                    <MenuItem Click="MenuItem_Click" Header="Quit" />
+                    <MenuItem x:Name="QuitButton" Header="Quit" />
                 </ContextMenu>
             </tb:TaskbarIcon.ContextMenu>
         </tb:TaskbarIcon>
